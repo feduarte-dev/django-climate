@@ -1,1 +1,9 @@
 <p>{{ weather }}</p>
+
+<a href="{% url 'city-weather' weather.city.slugify%}">
+    <p>Retornar</p>
+</a>
+
+<a href="{% url 'home-page' %}">
+    <p>Página Inicial</p>
+</a>

@@ -1,3 +1,6 @@
 {% for weather in weathers %}
-    <p>{{ weather }}</p>
+    <a href="{% url 'weather-details' weather.city.slugify weather.date|date:'Y-m-d' %}">
+        <p>{{ weather }}</p>
+    </a>
 {% endfor %}
+

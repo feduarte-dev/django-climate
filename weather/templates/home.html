@@ -1,3 +1,6 @@
 {% for city in cities %}
-    <p>{{ city }}</p>
+    <a href="{% url 'city-weather' city.slugify %}">
+        <p>{{ city }}</p>
+    </a>
 {% endfor %}
+
